@@ -18,14 +18,14 @@ const NftCard: React.FC<Props> = ({ ownedNft }: Props) => {
     <Card sx={{ borderRadius: 3, boxShadow: "none" }}>
       <CardActionArea
         onClick={() =>
-          ownedNft.metadata.externalUrl &&
-          window.open(ownedNft.metadata.externalUrl)
+          ownedNft?.tokenUri?.gateway &&
+          window.open(ownedNft?.tokenUri?.gateway)
         }
       >
         <CardMedia
           component="img"
           alt="green iguana"
-          image={ownedNft.media[0].thumbnail || PlaceholderImage}
+          image={ownedNft?.media?.[0].gateway}
           onError={({ currentTarget }: any) => {
             currentTarget.onerror = null;
             currentTarget.src = PlaceholderImage;

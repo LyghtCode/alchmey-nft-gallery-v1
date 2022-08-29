@@ -167,7 +167,7 @@ const NavBar: React.FC = () => {
                 Total Balance
               </Typography>
               <Typography variant="h6">
-                {Math.round(Number(balance) * 100000) / 100000} ETH
+                {Math.round(Number(balance) * 100000) / 100000} MATIC
               </Typography>
             </Box>
           </Box>

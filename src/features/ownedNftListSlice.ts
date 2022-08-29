@@ -14,18 +14,20 @@ export const fetchOwnedNftsList = createAsyncThunk(
   async (ownerAddr: string) => {
     const canceler = axios.CancelToken.source();
 
+    // const cachedData: OwnedNftsList | null = retrieveCache(ownerAddr);
     const cachedData: OwnedNftsList | null = retrieveCache(ownerAddr);
 
     const apiKey = process.env.REACT_APP_ALCHEMY_KEY;
     const url = `${apiKey}/getNFTs?owner=${ownerAddr}`;
 
     if (cachedData) {
+      console.log(cachedData);
       return cachedData as OwnedNftsList;
     } else {
       const response = await axios.request({
         responseType: "json",
         method: "GET",
-        baseURL: "https://eth-mainnet.alchemyapi.io/nft/v2/",
+        baseURL: "https://polygon-mainnet.g.alchemy.com/nft/v2/",
         url: url,
         cancelToken: canceler.token,
       });
