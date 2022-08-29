@@ -1,11 +1,11 @@
 {
   "filename": "ethereum",
-  "chainId": 1,
-  "name": "Ethereum",
-  "longName": "Ethereum Mainnet",
+  "chainId": 137,
+  "name": "Polygon",
+  "longName": "Polygon Mainnet",
   "color": "#627EEA",
-  "rpc": ["https://cloudflare-eth.com", "https://main-rpc.linkpool.io"],
-  "explorers": ["https://etherscan.io/"],
+  "rpc": ["https://polygon-mainnet.infura.io/v3/806d50c30e964e91abca36c48cd62006"],
+  "explorers": ["https://polygonscan.com/"],
   "isFavortite": true,
   "tokens": [
     {
