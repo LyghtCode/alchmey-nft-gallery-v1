@@ -8,11 +8,11 @@ import {
   Toolbar,
   Typography,
   useTheme,
+  Avatar
 } from "@mui/material";
 import { useWeb3Context } from "../utils/hooks/useWeb3Context";
 import { Link } from "react-router-dom";
 import {
-  AccountBalanceRounded,
   AccountBalanceWalletRounded,
   AccountCircleRounded,
   CloseRounded,
@@ -54,15 +54,12 @@ const NavBar: React.FC = () => {
           style={{ textDecoration: "none", color: theme.palette.text.primary }}
         >
           <Box sx={{ display: "flex", alignItems: "center" }}>
-            <AccountBalanceRounded
-              sx={{
-                height: theme.spacing(4),
-                width: theme.spacing(4),
-                mr: 1,
-              }}
-            />
+            <Avatar
+              src="logo.svg"
+              sx={{ width: 66, height: 66 }}
+            ></Avatar>
             <Typography variant="h5" noWrap>
-              The Athenaeum
+              GolfDAO Clubhouse
             </Typography>
           </Box>
         </Link>
@@ -139,9 +136,12 @@ const NavBar: React.FC = () => {
                 p: 2,
               }}
             >
-              <AccountCircleRounded fontSize="large" />
+              <Avatar
+                src="logo.svg"
+                sx={{ width: 66, height: 66 }}
+              ></Avatar>
               <Typography variant="h5" sx={{ mt: 1 }}>
-                {address.slice(-7)}
+                {address.slice(0, 7)}
               </Typography>
               <Button
                 sx={{ mt: 1, color: theme.palette.text.secondary }}

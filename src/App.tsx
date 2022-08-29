@@ -53,7 +53,7 @@ const App: React.FC = () => {
         paper: "#4f4f4f",
       },
       text: {
-        primary: "#ffffff",
+        primary: "#a1c245",
         secondary: "#555555",
       },
     },
@@ -73,7 +73,7 @@ const App: React.FC = () => {
         paper: "#ededed",
       },
       text: {
-        primary: "#000000",
+        primary: "#a1c245",
         secondary: "#353840",
       },
     },
