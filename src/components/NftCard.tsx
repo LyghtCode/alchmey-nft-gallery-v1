@@ -7,7 +7,7 @@ import {
   Typography,
 } from "@mui/material";
 import { OwnedNft } from "../models";
-import PlaceholderImage from "../assets/icons/placeholder-image.svg";
+import PlaceholderImage from "../assets/icons/gdao.gif";
 
 interface Props {
   ownedNft: OwnedNft;
