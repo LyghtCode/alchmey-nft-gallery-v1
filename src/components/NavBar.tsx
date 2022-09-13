@@ -59,7 +59,7 @@ const NavBar: React.FC = () => {
               sx={{ width: 66, height: 66 }}
             ></Avatar>
             <Typography variant="h5" noWrap>
-              GolfDAO Clubhouse
+              Clubhouse
             </Typography>
           </Box>
         </Link>
