@@ -137,7 +137,7 @@ const NavBar: React.FC = () => {
               }}
             >
               <Avatar
-                src="logo.svg"
+                src="letrascut.webp"
                 sx={{ width: 66, height: 66 }}
               ></Avatar>
               <Typography variant="h5" sx={{ mt: 1 }}>
