@@ -55,7 +55,7 @@ const NavBar: React.FC = () => {
         >
           <Box sx={{ display: "flex", alignItems: "center" }}>
             <Avatar
-              src="logo.svg"
+              src="letrascut.webp"
               sx={{ width: 66, height: 66 }}
             ></Avatar>
             <Typography variant="h5" noWrap>
